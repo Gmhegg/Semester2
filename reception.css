@@ -1,0 +1,41 @@
+
+
+   tr, th {
+    border: 2px solid #212529;
+    padding: 10px 20px;
+    text-align: center;
+    
+    
+  }
+
+  td {
+
+    border: 2px solid #212529;
+    padding: 10px 20px;
+    text-align: center;
+    /* background-color: #83D1E1;*/
+    
+
+  }
+  
+  
+
+  
+
+  .classOne{
+
+    background-color: #0E8EA8;
+    color: #fff;
+    text-align: center;
+
+
+  }
+
+  .table-row {
+  background-color: blue ;
+
+  }
+
+  .table-row:hover{background-color: red;}
+
+  .table-rowselected{background-color: green}
