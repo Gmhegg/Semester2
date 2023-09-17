@@ -1,0 +1,354 @@
+
+
+tr, th {
+    border: 2px solid #212529;
+    padding: 10px 20px;
+    text-align: center;
+    
+    
+    
+  }
+
+  td {
+
+    border: 2px solid #212529;
+    padding: 10px 20px;
+    text-align: center;
+    /* background-color: #83D1E1;*/
+    font-family: 'FontAwesome';
+  
+  }
+  
+  
+
+  
+
+  .classOne{
+
+    background-color: #0E8EA8;
+    color: #fff;
+    text-align: center;
+
+
+  }
+
+  .classTwo {
+
+    background-color: #83D1E1 ;
+  }
+
+  .table-row {
+  background-color: #83D1E1 ;
+
+  }
+
+  .table-row:hover{background-color: darkgrey;}
+
+  .table-rowselected{background-color: green}
+
+  
+.tbody {
+
+    width: auto;
+    margin: 200px;
+    margin-right: 200px;
+    margin-top: 5px;
+    margin-bottom: 50px;
+    border-right: 3px solid #232424;
+    border-left: 3px solid #232424;
+    
+    
+    }
+    
+table {
+
+    overflow-x: scroll;
+    z-index: 1;
+
+}
+
+.reception, .schedule, .delivery {
+
+    overflow-x: scroll;
+
+}
+
+#modal-background {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    opacity: .50;
+    -webkit-opacity: .5;
+    -moz-opacity: .5;
+    filter: alpha(opacity=50);
+    z-index: 1000;
+}
+
+#modal-content {
+    background-color: white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    box-shadow: 0 0 20px 0 #222;
+    -webkit-box-shadow: 0 0 20px 0 #222;
+    -moz-box-shadow: 0 0 20px 0 #222;
+    display: none;
+    height: 240px;
+    left: 50%;
+    margin: -120px 0 0 -160px;
+    padding: 10px;
+    position: fixed;
+    top: 50%;
+    width: 320px;
+    z-index: 1000;
+}
+
+#modal-background2 {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  opacity: .50;
+  -webkit-opacity: .5;
+  -moz-opacity: .5;
+  filter: alpha(opacity=50);
+  z-index: 1000;
+}
+
+#modal-content2 {
+  background-color: white;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  box-shadow: 0 0 20px 0 #222;
+  -webkit-box-shadow: 0 0 20px 0 #222;
+  -moz-box-shadow: 0 0 20px 0 #222;
+  display: none;
+  height: 240px;
+  left: 50%;
+  margin: -120px 0 0 -160px;
+  padding: 10px;
+  position: fixed;
+  top: 50%;
+  width: 320px;
+  z-index: 1000;
+}
+#modal-background2.active, #modal-content2.active {
+  display: block;
+}
+
+#modal-background.active, #modal-content.active {
+    display: block;
+}​
+
+#cooltoast-container {
+ 
+    width: auto;
+    position: absolute;
+    top: 75px;
+    right: 50px;
+  }
+  
+  
+  .cooltoast-toast {
+    position: relative;
+    padding: 8px 12px;
+    margin: 16px;
+    border-radius: 8px;
+    background: #F5F5F5;
+    cursor: pointer;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.08), 0 1px 3px rgba(0,0,0,0.19);
+    animation-duration:  .3s;
+    animation-name: cooltoast;
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    position: absolute;
+    top: 75px;
+    right: 50px;
+  }
+  
+  .cooltoast-fadeOut {
+    animation-name: cooltoastFadeOut;
+    animation-duration: .3s;
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-fill-mode: forwards;
+  }
+  
+  #cooltoast-container p,
+  #cooltoast-container h4 {
+    margin: 3px 0!important;
+  }
+  
+  .cooltoast-title {
+    font-weight: 700;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .cooltoast-text {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .cooltoast-icon {
+    position: absolute;
+    top: 5px;
+    left: -40px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background: #FFF;
+  }
+  
+  .cooltoast-toast a, .cooltoast-toast a:hover {
+    color: #549EDB !important;
+    text-decoration: none !important;
+  }
+  
+  /** toast types */
+  .cooltoast-success {
+    border-bottom: 2px solid #51C625;
+  }
+  
+  .cooltoast-warning {
+    border-bottom: 2px solid #DB9215;
+  }
+  
+  .cooltoast-error {
+    border-bottom: 2px solid #DB2B1D;
+  }
+  
+  .cooltoast-info {
+    border-bottom: 2px solid #27ABDB;
+  }
+  
+  @keyframes cooltoast {
+    from {
+      transform: translate3d(400px, 0, 0);;
+      opacity: 0;
+    }
+    to {
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes cooltoastFadeOut {
+    from {
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+    }
+    to {
+      transform: translate3d(400px, 0, 0);
+      opacity: 0;
+    }
+  }
+  
+  .dropbtn {
+  
+    color: white;
+    padding: 19px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    right: -47px; 
+    display: none;
+    position: absolute;
+    
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  h1, h2 {
+    padding: 10px 20px;
+    text-align: center;
+    
+  
+  }
+
+select { font-family: 'FontAwesome', Verdana }
+
+
+
+.btnOut {
+
+
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace; 
+    background-color: #dc3545 ;
+    color: #fff ;
+    padding: 5px 25px;
+    text-align: center;
+    position: absolute;
+    margin: 5px;
+    margin-top: -15px;
+    
+    
+    
+    }
+    
+    .btnIn {
+    
+        font-size: 20px;
+        font-family: 'Courier New', Courier, monospace; 
+        background-color: #2d8517 ;
+        color: #fff ;
+        padding: 5px 25px;
+        text-align: center; 
+        position: inherit;
+        right: 200px; 
+        float: right
+        
+        
+    }
+    
+    .btnAdd {
+    
+        font-size: 20px;
+        font-family: 'Courier New', Courier, monospace; 
+        background-color: #2d8517 ;
+        color: #fff ;
+        padding: 5px 25px;
+        text-align: center; 
+        position: absolute;
+        right: 200px; 
+       
+    
+    }
+    
+    .btnClear {
+    
+        font-size: 20px;
+        font-family: 'Courier New', Courier, monospace; 
+        background-color: #dc3545 ;
+        color: #fff ;
+        padding: 5px 25px;
+        text-align: center;
+    
+        
+    }
